@@ -20,6 +20,27 @@
 .page-title > span {
   color: var(--yorenge);
 }
+.head-title {
+  color: var(--dblack);
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+.head-para {
+  color: rgba(19, 19, 24, 0.7);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 26px;
+}
+.btn-primary {
+  border-radius: 8px;
+  background: var(--yorenge);
+  width: 10.875rem;
+  height: 3.25rem;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 800;
+  border: none;
+}
 
 /***** nav section *****/
 .nav-title-container {
@@ -56,8 +77,8 @@
     align-items: center;
 } */
 .nav-container > i {
-    display: none;
-    color: var(--dblack );
+  display: none;
+  color: var(--dblack);
 }
 
 /***** End nav section *****/
@@ -85,11 +106,10 @@
   justify-content: center;
 }
 .banner-container > div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 .tour-title {
   color: #fff;
@@ -117,10 +137,9 @@
   background: rgba(255, 255, 255, 0.3);
 }
 .frm-design {
-  width: 174px;
-  height: 52px;
-  flex-shrink: 0;
-  border-radius: 8px;
+  width: 10.9375rem;
+  height: 3.25rem;
+  border-radius: 0.5rem;
   background: #fff;
   color: rgba(19, 19, 24, 0.5);
   font-size: 1rem;
@@ -128,55 +147,104 @@
   border: none;
   padding-left: 0.5rem;
 }
-.find{
-   display: flex;
-   gap: 1.625rem;
+.find {
+  display: flex;
+  gap: 1.625rem;
 }
 .find > button {
-    background-color: var(--yorenge);
-    color: white;
-    display: flex;
-    gap:0.5rem;
-    justify-content: center;
-    align-items: center;
+  background-color: var(--yorenge);
+  color: white;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
 }
 /***** End banner section *****/
+/***** Tour section *****/
+.tours {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin: auto 8.4375rem; */
+}
+.tours-container {
+  width: 73.125rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 6.25rem;
+  /* border: 2px solid black; */
+}
+.tour-info > ul > li {
+  padding-bottom: 1.5rem;
+}
+.tour-info > ul {
+  padding-left: 1.5rem;
+}
+.tour-info > .head-para {
+  max-width: 36.0625rem;
+  padding: 1.5rem 0;
+}
+.tour-info > .btn-primary {
+  margin-top: 1rem;
+}
+/***** End Tour section *****/
 
 /* responsive css start */
-@media screen and (max-width:600px) {
-    .nav-container > ul {
-        display: none;
-    }
-    .nav-container > i {
-        display: block;
-    }
-    .find{
-        flex-direction: column;
-    }
-    .tour-title{
-        padding-top: 2rem;
-        font-size: 1.375rem;
-    }
-    .tour-description{
-        max-width: 19rem;
-        font-size: 0.875rem;
-        padding-top: 0.5rem;
-        padding-bottom: 0;
-    }
-    .banner-containe{
-        width:100%;
-        height: 100%;
-        background-position: center center;
-        
-    }
-    .frm-design{
-        width: 15.9375rem;
-        height: 3.25rem;
-        padding-left: 0;
-        text-align: center;
-    }
-    .find-menu{
-        margin: 2rem 1.5rem;
-    }
-    
+@media screen and (max-width: 600px) {
+  .nav-container > ul {
+    display: none;
+  }
+  .nav-container > i {
+    display: block;
+  }
+  .find {
+    flex-direction: column;
+  }
+  .tour-title {
+    padding-top: 2rem;
+    font-size: 1.375rem;
+  }
+
+  .tour-description {
+    max-width: 19rem;
+    font-size: 0.875rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0;
+  }
+  .banner-containe {
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+  }
+  .frm-design {
+    width: 15.9375rem;
+    height: 3.25rem;
+    padding-left: 0;
+    text-align: center;
+  }
+  .find-menu {
+    margin: 2rem 1.5rem;
+  }
+  .tours-container {
+    flex-direction: column;
+  }
+  .head-title {
+    font-size: 1.25rem;
+  }
+  .tour-para {
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+  }
+  .tour-info {
+    max-width: 20.9375rem;
+  }
+  .tour-img {
+    padding-top: 1.5rem;
+    max-width: 20.9375rem;
+  }
+  .tour-img > img {
+    width: 100%;
+    height: 100%;
+  }
 }
