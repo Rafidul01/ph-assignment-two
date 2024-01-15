@@ -189,9 +189,50 @@
   margin-top: 1rem;
 }
 /***** End Tour section *****/
+/***** destination *****/
+.destination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.destination > .head-title,
+.destination > .head-para {
+  text-align: center;
+}
+.destination > .head-title{
+    padding-top: 6.25rem;
+}
+.destination > .head-para{
+    padding-top: 1.5rem;
+    padding-bottom: 3rem;
+    max-width: 40.1875rem;
+}
+.destination-img-container {
+  width: 73.125rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.imgs {
+  position: relative;
+  text-align: center;
+}
+.img-txt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 1.75rem;
+  font-weight: 800;
+}
+/***** End destination *****/
 
 /* responsive css start */
 @media screen and (max-width: 600px) {
+/***** nav *****/  
+
   .nav-container > ul {
     display: none;
   }
@@ -212,8 +253,11 @@
     padding-top: 0.5rem;
     padding-bottom: 0;
   }
-  .banner-containe {
-    width: 100%;
+/***** End nav *****/
+/***** banner part *****/ 
+
+  .banner-container {
+    width: 20.9375rem;
     height: 100%;
     background-position: center center;
   }
@@ -226,12 +270,17 @@
   .find-menu {
     margin: 2rem 1.5rem;
   }
+   /***** End banner part *****/
+   /***** Tour part *****/ 
+   
   .tours-container {
     flex-direction: column;
   }
   .head-title {
     font-size: 1.25rem;
   }
+  
+  .head-para,
   .tour-para {
     font-size: 0.875rem;
     line-height: 1.5rem;
@@ -247,4 +296,28 @@
     width: 100%;
     height: 100%;
   }
+   /***** End Tour part *****/
+   /***** destination *****/ 
+
+   
+  .destination-img-container{
+    max-width: 20.9375rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+  }
+  .imgs{
+    width: 20.9375rem;
+    height: 10.9375rem;
+    
+  }
+  .imgs > img {
+    height: 100%;
+    width: 100%;
+  }
+  .destination .head-para{
+    max-width: 19.3125rem;
+  }
+    /***** End destination *****/
 }
