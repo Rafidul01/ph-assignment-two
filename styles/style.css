@@ -363,14 +363,14 @@
   justify-content: center;
 }
 .card > div {
-  padding: 32px 55px 32px 32px;
+  padding: 2rem;
 }
 .card > div > h4 {
   color: var(--dblack);
   font-size: 1.5rem;
   font-weight: 800;
-  padding-top: 2rem;
-  padding-bottom: 1rem;
+  /* padding-top: 2rem;
+  padding-bottom: 1rem; */
 }
 
 /***** End Choose us section *****/
@@ -414,9 +414,9 @@
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
-.icon-container{
-    display: flex;
-    gap: 1.5rem;
+.icon-container {
+  display: flex;
+  gap: 1.5rem;
 }
 .icon-container > p > i {
   color: var(--yorenge);
@@ -428,7 +428,7 @@
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.625rem;
-  padding-bottom:1rem ;
+  padding-bottom: 1rem;
 }
 .discounts > h2 {
   color: var(--dblack);
@@ -444,8 +444,97 @@
   font-weight: 800;
   padding-bottom: 1.5rem;
 }
+.deals > .btn-primary {
+  margin-top: 3rem;
+  padding: 1rem;
+  width: auto;
+  height: auto;
+}
 
 /***** End deals *****/
+/***** newsletter *****/
+.news-title {
+  /* color: var(--dblack); */
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+.news-pera,
+.news-title {
+  max-width: 21.875rem;
+}
+.news-pera {
+  color: #5a5a5d;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.625rem;
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+}
+.input-txt {
+  width: 24.5625rem;
+  border: none;
+  color: rgba(19, 19, 24, 0.3);
+
+  font-size: 1rem;
+  font-weight: 400;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  /* padding-left: 1rem; */
+  border-radius: 8px;
+  background: rgba(19, 19, 24, 0.05);
+  margin-bottom: 1rem;
+}
+.int-btn {
+  text-align: center;
+  background: var(--yorenge);
+  font-size: 20px;
+  font-weight: 800;
+  color: white;
+  margin-top: 0.5rem;
+}
+
+.news-form {
+  max-width: 24.5625rem;
+  border-top: 1px solid rgba(19, 19, 24, 0.1);
+  padding-top: 1.5rem;
+}
+.news-derais-container {
+  border-radius: 1rem;
+  border: 1px solid var(--yorenge);
+  width: 29.625rem;
+  height: 26.375rem;
+  /* padding: 1.5rem; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.newletter-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding-top: 6.25rem;
+}
+.news-img-container {
+  position: relative;
+}
+.save-title {
+  position: absolute;
+  width: 20.25rem;
+  height: 7.5rem;
+  transform: rotate(-19.628deg);
+  border-radius: 16px;
+  background-color: var(--yorenge);
+  color: white;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  left: 21rem;
+  bottom: 3.5rem;
+}
+/***** End newsletter *****/
 
 /* responsive css start */
 @media screen and (max-width: 600px) {
@@ -567,12 +656,27 @@
   .choose-container {
     padding-top: 2rem;
   }
+  .card > div > .head-para {
+    max-width: 16.9375rem;
+  }
+  .card > div > h4 {
+    padding: 0;
+    max-width: 16.9375rem;
+  }
+  .card > div {
+    margin: 0;
+    max-width: 16rem;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
   /***** End choose us section *****/
+
   /***** Deals section *****/
-  .deals-container{
+  .deals-container {
     width: 20.9375rem;
-height: 31.25rem;
-border-radius: 1rem;
+    height: 31.25rem;
+    border-radius: 1rem;
   }
   .discounts {
     /* width: 303px;
@@ -580,43 +684,94 @@ height: 297px; */
     /* padding: 1.625rem; */
     margin: 0;
   }
-  .discount-container{
+  .discount-container {
     width: 303px;
-height: 297px;
-flex-shrink: 0;
+    height: 297px;
+    flex-shrink: 0;
   }
   .discounts > p {
-
     font-size: 0.875rem;
-width: 258px;
-
+    width: 258px;
   }
-  .icon-container{
+  .icon-container {
     flex-wrap: wrap;
     gap: 1rem;
   }
   .icon-container > p {
     padding: 0;
+    font-size: 1rem;
   }
-  .btn-primary{
-    width: 130px;
-height: 40px;
-padding: 0;
+  .btn-primary {
+    width: 8.125rem;
+    height: 2.5rem;
+    padding: 0;
   }
   .discounts > h2 {
-   padding: 0;
+    padding: 0;
+    font-size: 1.25rem;
+    padding-top: 1.125rem;
+    padding-bottom: 0.5rem;
   }
   .discounts > h3 {
     padding: 0;
+    font-size: 1rem;
+    padding-top: 0.75rem;
+    padding-bottom: 1rem;
   }
-  .discount-container{
+  .discount-container {
     margin: 0;
-    margin: 11.6875rem 1rem  1rem  1rem ;
+    margin: 11.6875rem 1rem 1rem 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  
-/***** End Deals section *****/
+  .discounts {
+    padding: 1rem;
+  }
+  .deals > .head-para {
+    text-align: center;
+    max-width: 40.1875rem;
+  }
+
+  /***** End Deals section *****/
+  /***** newsletter section *****/ 
+  .newletter-form {
+    flex-direction: column;
+  }
+  .news-img-container, .news-derais-container{
+width: 20.9375rem;
+height: 22.0625rem;
+  }
+  .news-img-container > img{
+    height: 100%;
+    width: 100%;
+  }
+  .save-title{
+    width: 13.376rem;
+    height: 4.95425rem;
+    left: 7rem;
+    bottom: 2.5rem;
+  }
+  .input-txt,.news-title ,.news-form ,.news-pera{
+    max-width: 18rem;
+    
+  }
+  .news-form{
+    padding: 0;
+  }
+  .input-txt{
+    text-align: center;
+    padding-top: 1rem;
+  }
+  .input-txt, .news-pera{
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  .news-pera{
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+  }
+
+   /***** End newsletter section *****/
   
 }
