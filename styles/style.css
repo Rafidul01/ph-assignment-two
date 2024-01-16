@@ -443,6 +443,7 @@
   font-size: 1.25rem;
   font-weight: 800;
   padding-bottom: 1.5rem;
+  padding-top: 1rem;
 }
 .deals > .btn-primary {
   margin-top: 3rem;
@@ -450,8 +451,45 @@
   width: auto;
   height: auto;
 }
-
+.deals .head-para{
+  text-align: center;
+}
 /***** End deals *****/
+.photos{
+  width: 23.375rem;
+  height: 12.5rem;
+  border-radius: 15px;
+}
+.glry1{
+  background-image: url('../Images/img\ 1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.glry2{
+  background-image: url('../Images/img\ 2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.glry3{
+  background-image: url('../Images/img\ 3.jpg');
+  /* background-size: cover; */
+  background-repeat: no-repeat;
+  /* background-size: contain; */
+}
+.gallary-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 73.125rem;
+  margin: 0 auto;
+  row-gap: 1.5rem;
+  column-gap: 1.5rem;
+}
+.photo-gallery > .head-title , .photo-gallery > .head-para{
+  text-align: center;
+}
+.photo-gallery{
+  margin-top: 6.25rem;
+}
 /***** newsletter *****/
 .news-title {
   /* color: var(--dblack); */
@@ -483,6 +521,7 @@
   border-radius: 8px;
   background: rgba(19, 19, 24, 0.05);
   margin-bottom: 1rem;
+  text-align: center;
 }
 .int-btn {
   text-align: center;
@@ -715,6 +754,9 @@ footer{
     margin-top: 1rem;
     margin-bottom: 2rem;
   }
+  .discounts > h3 {
+    padding-top: 0;
+  }
   /***** End choose us section *****/
 
   /***** Deals section *****/
@@ -762,6 +804,7 @@ height: 297px; */
     font-size: 1rem;
     padding-top: 0.75rem;
     padding-bottom: 1rem;
+    padding-top: 1rem;
   }
   .discount-container {
     margin: 0;
@@ -776,6 +819,9 @@ height: 297px; */
   .deals > .head-para {
     text-align: center;
     max-width: 40.1875rem;
+  }
+  .deals > .btn-primary{
+    display: none;
   }
 
   /***** End Deals section *****/
@@ -827,5 +873,14 @@ height: 22.0625rem;
    }
    /***** End footer *****/
    
+  /***** photo gallery *****/  
+  .gallary-container{
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 20.9375rem;
+  }
+  .photos{
+    max-width: 20.9375rem;
+  }
+  /****a Eed photo gallery *****/
   
 }
