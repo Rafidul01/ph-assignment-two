@@ -374,6 +374,74 @@
 }
 
 /***** End Choose us section *****/
+/***** deals *****/
+.deals-container {
+  width: 73.125rem;
+  height: 31.25rem;
+  background-image: url("../Images/Group\ 39.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-top: 1.5rem;
+  /* padding: 3.5rem; */
+}
+.discount-container {
+  margin: 3.5rem;
+  border-radius: 16px;
+  border: 2px solid #fff;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(2.5px);
+  width: 579px;
+  height: 389px;
+}
+.discounts {
+  margin: 3.25rem;
+}
+.det {
+  background-image: url("../Images/Group\ 40.png");
+  justify-content: start;
+}
+.deals {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 6.25rem;
+}
+.head-para {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+.discounts > p > i {
+  color: var(--yorenge);
+  display: inline-block;
+  padding-right: 0.5rem;
+}
+.discounts > p {
+  color: #5a5a5d;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.625rem;
+  padding-bottom:1rem ;
+}
+.discounts > h2 {
+  color: var(--dblack);
+  font-size: 1.5rem;
+  font-weight: 800;
+  padding-top: 1.625rem;
+  padding-bottom: 1rem;
+}
+.discounts > h3 {
+  color: var(--yorenge);
+
+  font-size: 1.25rem;
+  font-weight: 800;
+  padding-bottom: 1.5rem;
+}
+
+/***** End deals *****/
 
 /* responsive css start */
 @media screen and (max-width: 600px) {
@@ -450,7 +518,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* border: 2px solid red; */
   }
   .imgs {
     width: 20.9375rem;
@@ -465,37 +532,67 @@
     max-width: 19.3125rem;
   }
   /***** End destination *****/
-  /***** choose us section *****/ 
-  .cards{
+  /***** choose us section *****/
+  .cards {
     max-width: 20.9375rem;
     flex-direction: column;
     flex-wrap: nowrap;
     /* max-height: 18.0625rem; */
   }
-  .card{
+  .card {
     width: 20.8125rem;
     height: 17.9375rem;
   }
-  .card > div{
+  .card > div {
     width: 20.8125rem;
     height: 17.9375rem;
     padding: 0;
     margin: 2rem;
   }
-  .card > div > h4{
+  .card > div > h4 {
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
-  .card > div > img{
+  .card > div > img {
     width: 3rem;
     height: 3rem;
   }
-  .choose-info > .head-para{
+  .choose-info > .head-para {
     padding: 1rem 0;
   }
   .choose-container {
     padding-top: 2rem;
-}
-/***** End choose us section *****/
+  }
+  /***** End choose us section *****/
+  /***** Deals section *****/
+  .deals-container{
+    width: 20.9375rem;
+height: 31.25rem;
+  }
+  .discounts {
+    width: 303px;
+height: 297px;
+    padding: 1.625rem;
+    margin: 0;
+  }
+  .discount-container{
+    width: 303px;
+height: 297px;
+flex-shrink: 0;
+  }
+  .discounts > p {
+
+    font-size: 0.875rem;
+width: 258px;
+
+  }
+  .discounts > h2 {
+   
+  }
+  .discounts > h3 {
+
+  }
+  
+/***** End Deals section *****/
   
 }
