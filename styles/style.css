@@ -414,12 +414,16 @@
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
-.discounts > p > i {
+.icon-container{
+    display: flex;
+    gap: 1.5rem;
+}
+.icon-container > p > i {
   color: var(--yorenge);
   display: inline-block;
   padding-right: 0.5rem;
 }
-.discounts > p {
+.icon-container > p {
   color: #5a5a5d;
   font-size: 1rem;
   font-weight: 400;
@@ -568,11 +572,12 @@
   .deals-container{
     width: 20.9375rem;
 height: 31.25rem;
+border-radius: 1rem;
   }
   .discounts {
-    width: 303px;
-height: 297px;
-    padding: 1.625rem;
+    /* width: 303px;
+height: 297px; */
+    /* padding: 1.625rem; */
     margin: 0;
   }
   .discount-container{
@@ -586,11 +591,30 @@ flex-shrink: 0;
 width: 258px;
 
   }
+  .icon-container{
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .icon-container > p {
+    padding: 0;
+  }
+  .btn-primary{
+    width: 130px;
+height: 40px;
+padding: 0;
+  }
   .discounts > h2 {
-   
+   padding: 0;
   }
   .discounts > h3 {
-
+    padding: 0;
+  }
+  .discount-container{
+    margin: 0;
+    margin: 11.6875rem 1rem  1rem  1rem ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
 /***** End Deals section *****/
