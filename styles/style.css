@@ -851,6 +851,7 @@ height: 22.0625rem;
   }
   .news-form{
     padding: 0;
+    padding-top: 1rem;
   }
   .input-txt{
     text-align: center;
