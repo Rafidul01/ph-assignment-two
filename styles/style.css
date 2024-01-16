@@ -79,6 +79,7 @@
 .nav-container > i {
   display: none;
   color: var(--dblack);
+  font-size: 2rem;
 }
 
 /***** End nav section *****/
