@@ -726,6 +726,7 @@ footer{
     height: 17.9375rem;
     padding: 0;
     margin: 2rem;
+    padding-top: 1.5rem;
   }
   .card > div > h4 {
     padding-top: 1rem;
